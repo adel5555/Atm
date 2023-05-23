@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+{% block content %}
+<form  method="post">
+  {% csrf_token %}
+  <div class="page slide-page">
+    <div class="title">
+      card withdraw</div>
+    <div class="field">
+      <div class="label">
+        {{ label }}</div>
+      <input type="text" name="card_withdraw" id="card_withdraw">
+      
+    </div>
+    <div class="field btns">
+      <button type="submit" class="submit">Submit</button>
+    </div>
+    
+  </div>
+  
+</form>
+{% endblock content %}

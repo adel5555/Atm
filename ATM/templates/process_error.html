@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Multi Step Form | CodingNepal</title> -->
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="{% static 'index.js' %}"></script>
+</head>
+
+<body style="background:-webkit-linear-gradient(bottom, #c50202, #000000);">
+    <div class="container">
+        <header>ATM Form</header>
+        <div class="progress-bar" style="color: red; display: flex; align-items: center; justify-content: center;">
+            {{error}}
+        </div>
+        <div class="field btns">
+            <a href="{% url 'card_id' %}" class="submit" style="text-decoration: none; font-size: larger; color: #000000;">
+                return to home page
+            </a>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>

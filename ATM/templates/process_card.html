@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+{% block content %}
+<form  method="post">
+  {% csrf_token %}
+  <div class="page slide-page">
+    
+    <div class="title">
+        Enter Card Number
+    </div>
+
+    <div class="field">
+      <div class="label">
+        {{ label }}</div>
+      <input type="number" name="card_id" id="card_id">
+      
+    </div>
+    <div class="field btns">
+      <button type="submit" class="submit">Submit</button>
+    </div>
+    
+  </div>
+  
+</form>
+{% endblock content %}
